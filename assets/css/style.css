@@ -215,7 +215,7 @@ ul{
     color: var(--text-black-900);
     padding: 5px 15px;
 }
-.aside .nav .li a.active{
+.aside .nav .active{
     color: var(--skin-color);
 }
 .aside .nav .li a i{
@@ -259,6 +259,7 @@ h3.my-profession{
     max-width: 40%;
     text-align: center;
     position: relative;
+    margin-left: -20px;
 }
 .home-img::after{
     content: '';
@@ -311,7 +312,7 @@ h3.my-profession{
     color: var(--text-black-700);
 }
 .about .about-content .personal-info{
-    flex: 0 0 60%;
+    flex: 0 0 50%;
     max-width: 60%;
     margin-top: 40px;
 }
@@ -340,8 +341,8 @@ h3.my-profession{
     margin-top: 10px;
 }
 .about .about-content .skills{
-    flex: 0 0 100%;
-    max-width: 40%;
+    flex: 0 0 30%;
+    max-width: 30%;
     margin-top: 40px;
 }
 .about .about-content .skills .skill-item{
@@ -383,9 +384,12 @@ h3.my-profession{
 }
 .about .about-content .education,
 .about .about-content .experience{
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 45%;
+    max-width: 45%;
     margin-top: 30px;  
+}
+.about .about-content .education{
+    margin-left: -100px;
 }
 .about .about-content h3.title{
     font-size: 24px;
@@ -510,4 +514,67 @@ h3.my-profession{
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
+}
+
+@media (max-width: 1199px){
+    .aside{
+        left: -270px
+    }
+    .main-content{
+        padding-left: 0;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width: 991px){
+    .service .service-item{
+        flex: 0 0 100%;
+        max-width: 50%;
+    }
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    }
+    .section-title{
+        margin-left: 0px;
+    }
+    .about .about-content .personal-info {
+        margin-left: -300px;
+    }
+    .about .about-text{
+        margin-left: -300px;
+    }
+    .about .about-content .skills{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .education{
+        margin-left: -300px;
+    }
+}
+@media (max-width: 767px){
+    .contatc .contact-form .col-6,
+    .contact .contact-info-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about .about-content .skills{
+        margin-left: -300px;
+    }
+    .about .about-content .experience{
+        margin-left: -300px;
+    }
+    .service .service-item{
+        margin-left: 0px;
+    }
 }

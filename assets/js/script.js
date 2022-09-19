@@ -5,3 +5,7 @@ var typed = new Typed(".typing", {
     BackSpeed:60,
     loop:true
 }) 
+
+//================== SCROLL ANIMATION ==================\\
+window.sr = ScrollReveal({reset: true});
+ScrollReveal().reveal('.scroll-animate', {duration: 1000});

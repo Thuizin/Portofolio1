@@ -17,6 +17,7 @@ body{
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Poppins' sans-serif;
+    background-color: var(--bg-black-900);
 }
 *{
     margin: 0;
@@ -98,6 +99,7 @@ ul{
     background-color: var(--bg-black-900);
 }
 .btn{
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -335,7 +337,7 @@ h3.my-profession{
     flex: 0 0 50%;
     max-width: 50%;
     margin-left: -100px;
-    color: white;
+    color: var(--text-black-900);
     margin-left: 0px;
 }
 .about .about-content .personal-info .info-item p{
@@ -359,9 +361,10 @@ h3.my-profession{
     margin-top: 10px;
 }
 .about .about-content .skills{
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 35%;
+    max-width: 35%;
     margin-top: 40px;
+    margin-left: -50px;
 }
 .about .about-content .skills .skill-item{
     flex: 0 0 100%;
@@ -601,6 +604,7 @@ h3.my-profession{
         flex: 0 0 100%;
         max-width: 50%;
     }
+    .about .about-content .education,
     .home .home-info{
         flex: 0 0 100%;
         max-width: 100%;
@@ -621,9 +625,6 @@ h3.my-profession{
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .education{
-        margin-left: -300px;
-    }
 }
 @media (max-width: 767px){
     .contatc .contact-form .col-6,
@@ -631,16 +632,22 @@ h3.my-profession{
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
-    .about .about-content .skills,
+    .about .about-content .skills .skill-item,
+    .about .about-content .personal-info .info-item,
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
     }
     .about .about-content .skills{
-        margin-left: -300px;
+        margin-left: -120px;
+    }
+    .about .about-content .skills .skill-item{
+        margin-top: 4px;
     }
     .about .about-content .education,
     .about .about-content .experience{
+        flex: 0 0 100%;
+        max-width: 100%;
         margin-left: -300px;
     }
     .service .service-item{
@@ -661,6 +668,13 @@ h3.my-profession{
         margin-left: 0px;
     }
 }
+@media (max-width: 630px){
+    .about .about-content .education,
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
 
 /* SCROLL */
 body::-webkit-scrollbar {
@@ -669,11 +683,16 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #212121;        /* color of the tracking area */
+    background: var(--bg-black-900);        /* color of the tracking area */
   }
   
   body::-webkit-scrollbar-thumb {
     background-color: var(--skin-color);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid #212121;  /* creates padding around scroll thumb */
+    border: 3px solid var(--bg-black-900);  /* creates padding around scroll thumb */
+  }
+
+  /* SCROLL ANIMATION */
+  .scroll-animate{
+    visibility: hidden;
   }

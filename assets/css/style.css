@@ -238,6 +238,7 @@ ul{
 .home .home-info{
     flex: 0 0 60%;
     max-width: 60%;
+    margin-left: 50px;
 }
 h3.hello{
     font-size: 28px;
@@ -266,7 +267,7 @@ h3.my-profession{
     max-width: 40%;
     text-align: center;
     position: relative;
-    margin-left: -20px;
+    margin-left: 300px;
 }
 .home-img::after{
     content: '';
@@ -552,6 +553,7 @@ h3.my-profession{
     max-width: 25%;
     text-align: center;
     margin-left: 500px;
+    margin-bottom: 25px;
 }
 .contact .contact-info-item .icon{
     display: inline-block;
@@ -659,3 +661,19 @@ h3.my-profession{
         margin-left: 0px;
     }
 }
+
+/* SCROLL */
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+    height: 1px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #212121;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--skin-color);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #212121;  /* creates padding around scroll thumb */
+  }
